@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Loudmouth Reference Manual" link="index.html" author="" name="loudmouth" version="2" language="c">
+  <chapters>
+    <sub name="Loudmouth" link="ch01.html">
+      <sub name="LmConnection" link="loudmouth-LmConnection.html"/>
+      <sub name="LmError" link="loudmouth-LmError.html"/>
+      <sub name="LmMessage" link="loudmouth-LmMessage.html"/>
+      <sub name="LmMessageHandler" link="loudmouth-LmMessageHandler.html"/>
+      <sub name="LmMessageNode" link="loudmouth-LmMessageNode.html"/>
+      <sub name="LmSSL" link="loudmouth-LmSSL.html"/>
+      <sub name="LmProxy" link="loudmouth-LmProxy.html"/>
+      <sub name="Miscellaneous Utility Functions" link="loudmouth-Miscellaneous-Utility-Functions.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="macro" name="LM_CONNECTION()" link="loudmouth-LmConnection.html#LM-CONNECTION:CAPS"/>
+    <keyword type="function" name="LmResultFunction ()" link="loudmouth-LmConnection.html#LmResultFunction"/>
+    <keyword type="function" name="LmDisconnectFunction ()" link="loudmouth-LmConnection.html#LmDisconnectFunction"/>
+    <keyword type="function" name="lm_connection_new ()" link="loudmouth-LmConnection.html#lm-connection-new"/>
+    <keyword type="function" name="lm_connection_new_with_context ()" link="loudmouth-LmConnection.html#lm-connection-new-with-context"/>
+    <keyword type="function" name="lm_connection_open ()" link="loudmouth-LmConnection.html#lm-connection-open"/>
+    <keyword type="function" name="lm_connection_open_and_block ()" link="loudmouth-LmConnection.html#lm-connection-open-and-block"/>
+    <keyword type="function" name="lm_connection_close ()" link="loudmouth-LmConnection.html#lm-connection-close"/>
+    <keyword type="function" name="lm_connection_authenticate ()" link="loudmouth-LmConnection.html#lm-connection-authenticate"/>
+    <keyword type="function" name="lm_connection_authenticate_and_block ()" link="loudmouth-LmConnection.html#lm-connection-authenticate-and-block"/>
+    <keyword type="function" name="lm_connection_get_keep_alive_rate ()" link="loudmouth-LmConnection.html#lm-connection-get-keep-alive-rate"/>
+    <keyword type="function" name="lm_connection_set_keep_alive_rate ()" link="loudmouth-LmConnection.html#lm-connection-set-keep-alive-rate"/>
+    <keyword type="function" name="lm_connection_is_open ()" link="loudmouth-LmConnection.html#lm-connection-is-open"/>
+    <keyword type="function" name="lm_connection_is_authenticated ()" link="loudmouth-LmConnection.html#lm-connection-is-authenticated"/>
+    <keyword type="function" name="lm_connection_get_server ()" link="loudmouth-LmConnection.html#lm-connection-get-server"/>
+    <keyword type="function" name="lm_connection_set_server ()" link="loudmouth-LmConnection.html#lm-connection-set-server"/>
+    <keyword type="function" name="lm_connection_get_jid ()" link="loudmouth-LmConnection.html#lm-connection-get-jid"/>
+    <keyword type="function" name="lm_connection_set_jid ()" link="loudmouth-LmConnection.html#lm-connection-set-jid"/>
+    <keyword type="function" name="lm_connection_get_port ()" link="loudmouth-LmConnection.html#lm-connection-get-port"/>
+    <keyword type="function" name="lm_connection_set_port ()" link="loudmouth-LmConnection.html#lm-connection-set-port"/>
+    <keyword type="function" name="lm_connection_get_ssl ()" link="loudmouth-LmConnection.html#lm-connection-get-ssl"/>
+    <keyword type="function" name="lm_connection_set_ssl ()" link="loudmouth-LmConnection.html#lm-connection-set-ssl"/>
+    <keyword type="function" name="lm_connection_get_proxy ()" link="loudmouth-LmConnection.html#lm-connection-get-proxy"/>
+    <keyword type="function" name="lm_connection_set_proxy ()" link="loudmouth-LmConnection.html#lm-connection-set-proxy"/>
+    <keyword type="function" name="lm_connection_send ()" link="loudmouth-LmConnection.html#lm-connection-send"/>
+    <keyword type="function" name="lm_connection_send_with_reply ()" link="loudmouth-LmConnection.html#lm-connection-send-with-reply"/>
+    <keyword type="function" name="lm_connection_send_with_reply_and_block ()" link="loudmouth-LmConnection.html#lm-connection-send-with-reply-and-block"/>
+    <keyword type="function" name="lm_connection_unregister_reply_handler ()" link="loudmouth-LmConnection.html#lm-connection-unregister-reply-handler"/>
+    <keyword type="function" name="lm_connection_register_message_handler ()" link="loudmouth-LmConnection.html#lm-connection-register-message-handler"/>
+    <keyword type="function" name="lm_connection_unregister_message_handler ()" link="loudmouth-LmConnection.html#lm-connection-unregister-message-handler"/>
+    <keyword type="function" name="lm_connection_set_disconnect_function ()" link="loudmouth-LmConnection.html#lm-connection-set-disconnect-function"/>
+    <keyword type="function" name="lm_connection_send_raw ()" link="loudmouth-LmConnection.html#lm-connection-send-raw"/>
+    <keyword type="function" name="lm_connection_get_state ()" link="loudmouth-LmConnection.html#lm-connection-get-state"/>
+    <keyword type="function" name="lm_connection_ref ()" link="loudmouth-LmConnection.html#lm-connection-ref"/>
+    <keyword type="function" name="lm_connection_unref ()" link="loudmouth-LmConnection.html#lm-connection-unref"/>
+    <keyword type="macro" name="LM_CONNECTION_DEFAULT_PORT" link="loudmouth-LmConnection.html#LM-CONNECTION-DEFAULT-PORT:CAPS"/>
+    <keyword type="macro" name="LM_CONNECTION_DEFAULT_PORT_SSL" link="loudmouth-LmConnection.html#LM-CONNECTION-DEFAULT-PORT-SSL:CAPS"/>
+    <keyword type="struct" name="LmConnection" link="loudmouth-LmConnection.html#LmConnection"/>
+    <keyword type="enum" name="enum LmHandlerResult" link="loudmouth-LmConnection.html#LmHandlerResult"/>
+    <keyword type="enum" name="enum LmHandlerPriority" link="loudmouth-LmConnection.html#LmHandlerPriority"/>
+    <keyword type="enum" name="enum LmDisconnectReason" link="loudmouth-LmConnection.html#LmDisconnectReason"/>
+    <keyword type="enum" name="enum LmConnectionState" link="loudmouth-LmConnection.html#LmConnectionState"/>
+    <keyword type="function" name="lm_error_quark ()" link="loudmouth-LmError.html#lm-error-quark"/>
+    <keyword type="enum" name="enum LmError" link="loudmouth-LmError.html#LmError"/>
+    <keyword type="macro" name="LM_ERROR" link="loudmouth-LmError.html#LM-ERROR:CAPS"/>
+    <keyword type="function" name="lm_message_new ()" link="loudmouth-LmMessage.html#lm-message-new"/>
+    <keyword type="function" name="lm_message_new_with_sub_type ()" link="loudmouth-LmMessage.html#lm-message-new-with-sub-type"/>
+    <keyword type="function" name="lm_message_get_type ()" link="loudmouth-LmMessage.html#lm-message-get-type"/>
+    <keyword type="function" name="lm_message_get_sub_type ()" link="loudmouth-LmMessage.html#lm-message-get-sub-type"/>
+    <keyword type="function" name="lm_message_get_node ()" link="loudmouth-LmMessage.html#lm-message-get-node"/>
+    <keyword type="function" name="lm_message_ref ()" link="loudmouth-LmMessage.html#lm-message-ref"/>
+    <keyword type="function" name="lm_message_unref ()" link="loudmouth-LmMessage.html#lm-message-unref"/>
+    <keyword type="struct" name="LmMessage" link="loudmouth-LmMessage.html#LmMessage"/>
+    <keyword type="enum" name="enum LmMessageType" link="loudmouth-LmMessage.html#LmMessageType"/>
+    <keyword type="enum" name="enum LmMessageSubType" link="loudmouth-LmMessage.html#LmMessageSubType"/>
+    <keyword type="function" name="LmHandleMessageFunction ()" link="loudmouth-LmMessageHandler.html#LmHandleMessageFunction"/>
+    <keyword type="function" name="lm_message_handler_new ()" link="loudmouth-LmMessageHandler.html#lm-message-handler-new"/>
+    <keyword type="function" name="lm_message_handler_invalidate ()" link="loudmouth-LmMessageHandler.html#lm-message-handler-invalidate"/>
+    <keyword type="function" name="lm_message_handler_is_valid ()" link="loudmouth-LmMessageHandler.html#lm-message-handler-is-valid"/>
+    <keyword type="function" name="lm_message_handler_ref ()" link="loudmouth-LmMessageHandler.html#lm-message-handler-ref"/>
+    <keyword type="function" name="lm_message_handler_unref ()" link="loudmouth-LmMessageHandler.html#lm-message-handler-unref"/>
+    <keyword type="typedef" name="LmMessageHandler" link="loudmouth-LmMessageHandler.html#LmMessageHandler"/>
+    <keyword type="function" name="lm_message_node_get_value ()" link="loudmouth-LmMessageNode.html#lm-message-node-get-value"/>
+    <keyword type="function" name="lm_message_node_set_value ()" link="loudmouth-LmMessageNode.html#lm-message-node-set-value"/>
+    <keyword type="function" name="lm_message_node_add_child ()" link="loudmouth-LmMessageNode.html#lm-message-node-add-child"/>
+    <keyword type="function" name="lm_message_node_set_attributes ()" link="loudmouth-LmMessageNode.html#lm-message-node-set-attributes"/>
+    <keyword type="function" name="lm_message_node_get_attribute ()" link="loudmouth-LmMessageNode.html#lm-message-node-get-attribute"/>
+    <keyword type="function" name="lm_message_node_set_attribute ()" link="loudmouth-LmMessageNode.html#lm-message-node-set-attribute"/>
+    <keyword type="function" name="lm_message_node_get_child ()" link="loudmouth-LmMessageNode.html#lm-message-node-get-child"/>
+    <keyword type="function" name="lm_message_node_find_child ()" link="loudmouth-LmMessageNode.html#lm-message-node-find-child"/>
+    <keyword type="function" name="lm_message_node_get_raw_mode ()" link="loudmouth-LmMessageNode.html#lm-message-node-get-raw-mode"/>
+    <keyword type="function" name="lm_message_node_set_raw_mode ()" link="loudmouth-LmMessageNode.html#lm-message-node-set-raw-mode"/>
+    <keyword type="function" name="lm_message_node_ref ()" link="loudmouth-LmMessageNode.html#lm-message-node-ref"/>
+    <keyword type="function" name="lm_message_node_unref ()" link="loudmouth-LmMessageNode.html#lm-message-node-unref"/>
+    <keyword type="function" name="lm_message_node_to_string ()" link="loudmouth-LmMessageNode.html#lm-message-node-to-string"/>
+    <keyword type="struct" name="struct LmMessageNode" link="loudmouth-LmMessageNode.html#LmMessageNode"/>
+    <keyword type="function" name="LmSSLFunction ()" link="loudmouth-LmSSL.html#LmSSLFunction"/>
+    <keyword type="function" name="lm_ssl_new ()" link="loudmouth-LmSSL.html#lm-ssl-new"/>
+    <keyword type="function" name="lm_ssl_is_supported ()" link="loudmouth-LmSSL.html#lm-ssl-is-supported"/>
+    <keyword type="function" name="lm_ssl_get_fingerprint ()" link="loudmouth-LmSSL.html#lm-ssl-get-fingerprint"/>
+    <keyword type="function" name="lm_ssl_set_ca ()" link="loudmouth-LmSSL.html#lm-ssl-set-ca"/>
+    <keyword type="function" name="lm_ssl_set_cipher_list ()" link="loudmouth-LmSSL.html#lm-ssl-set-cipher-list"/>
+    <keyword type="function" name="lm_ssl_ref ()" link="loudmouth-LmSSL.html#lm-ssl-ref"/>
+    <keyword type="function" name="lm_ssl_unref ()" link="loudmouth-LmSSL.html#lm-ssl-unref"/>
+    <keyword type="struct" name="LmSSL" link="loudmouth-LmSSL.html#LmSSL"/>
+    <keyword type="enum" name="enum LmCertificateStatus" link="loudmouth-LmSSL.html#LmCertificateStatus"/>
+    <keyword type="enum" name="enum LmSSLStatus" link="loudmouth-LmSSL.html#LmSSLStatus"/>
+    <keyword type="enum" name="enum LmSSLResponse" link="loudmouth-LmSSL.html#LmSSLResponse"/>
+    <keyword type="function" name="lm_proxy_new ()" link="loudmouth-LmProxy.html#lm-proxy-new"/>
+    <keyword type="function" name="lm_proxy_new_with_server ()" link="loudmouth-LmProxy.html#lm-proxy-new-with-server"/>
+    <keyword type="function" name="lm_proxy_get_type ()" link="loudmouth-LmProxy.html#lm-proxy-get-type"/>
+    <keyword type="function" name="lm_proxy_set_type ()" link="loudmouth-LmProxy.html#lm-proxy-set-type"/>
+    <keyword type="function" name="lm_proxy_get_server ()" link="loudmouth-LmProxy.html#lm-proxy-get-server"/>
+    <keyword type="function" name="lm_proxy_set_server ()" link="loudmouth-LmProxy.html#lm-proxy-set-server"/>
+    <keyword type="function" name="lm_proxy_get_port ()" link="loudmouth-LmProxy.html#lm-proxy-get-port"/>
+    <keyword type="function" name="lm_proxy_set_port ()" link="loudmouth-LmProxy.html#lm-proxy-set-port"/>
+    <keyword type="function" name="lm_proxy_get_username ()" link="loudmouth-LmProxy.html#lm-proxy-get-username"/>
+    <keyword type="function" name="lm_proxy_set_username ()" link="loudmouth-LmProxy.html#lm-proxy-set-username"/>
+    <keyword type="function" name="lm_proxy_get_password ()" link="loudmouth-LmProxy.html#lm-proxy-get-password"/>
+    <keyword type="function" name="lm_proxy_set_password ()" link="loudmouth-LmProxy.html#lm-proxy-set-password"/>
+    <keyword type="function" name="lm_proxy_ref ()" link="loudmouth-LmProxy.html#lm-proxy-ref"/>
+    <keyword type="function" name="lm_proxy_unref ()" link="loudmouth-LmProxy.html#lm-proxy-unref"/>
+    <keyword type="struct" name="LmProxy" link="loudmouth-LmProxy.html#LmProxy"/>
+    <keyword type="enum" name="enum LmProxyType" link="loudmouth-LmProxy.html#LmProxyType"/>
+    <keyword type="function" name="lm_utils_get_localtime ()" link="loudmouth-Miscellaneous-Utility-Functions.html#lm-utils-get-localtime"/>
+  </functions>
+</book>

@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Loudmouth Reference Manual: LmProxy</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Loudmouth Reference Manual">
+<link rel="up" href="ch01.html" title="Loudmouth">
+<link rel="prev" href="loudmouth-LmSSL.html" title="LmSSL">
+<link rel="next" href="loudmouth-Miscellaneous-Utility-Functions.html" title="Miscellaneous Utility Functions">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#loudmouth-LmProxy.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="loudmouth-LmSSL.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="loudmouth-Miscellaneous-Utility-Functions.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="loudmouth-LmProxy"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="loudmouth-LmProxy.top_of_page"></a>LmProxy</span></h2>
+<p>LmProxy — API for the proxy support in Loudmouth</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="loudmouth-LmProxy.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="returnvalue">LmProxy</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-new" title="lm_proxy_new ()">lm_proxy_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="returnvalue">LmProxy</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-new-with-server" title="lm_proxy_new_with_server ()">lm_proxy_new_with_server</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmProxy.html#LmProxyType" title="enum LmProxyType"><span class="returnvalue">LmProxyType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-get-type" title="lm_proxy_get_type ()">lm_proxy_get_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-set-type" title="lm_proxy_set_type ()">lm_proxy_set_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-get-server" title="lm_proxy_get_server ()">lm_proxy_get_server</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-set-server" title="lm_proxy_set_server ()">lm_proxy_set_server</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-get-port" title="lm_proxy_get_port ()">lm_proxy_get_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-set-port" title="lm_proxy_set_port ()">lm_proxy_set_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-get-username" title="lm_proxy_get_username ()">lm_proxy_get_username</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-set-username" title="lm_proxy_set_username ()">lm_proxy_set_username</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-get-password" title="lm_proxy_get_password ()">lm_proxy_get_password</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-set-password" title="lm_proxy_set_password ()">lm_proxy_set_password</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="returnvalue">LmProxy</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-ref" title="lm_proxy_ref ()">lm_proxy_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmProxy.html#lm-proxy-unref" title="lm_proxy_unref ()">lm_proxy_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmProxy.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy">LmProxy</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="loudmouth-LmProxy.html#LmProxyType" title="enum LmProxyType">LmProxyType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmProxy.description"></a><h2>Description</h2>
+<p>Use this together with an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to get the connection to use connect through a proxy. Example of how to use the <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> API.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td>
+        <td class="listing_code"><pre class="programlisting">LmConnection <span class="gtkdoc opt">*</span>connection<span class="gtkdoc opt">;</span>
+LmProxy      <span class="gtkdoc opt">*</span>proxy<span class="gtkdoc opt">;</span>
+
+connection <span class="gtkdoc opt">=</span> <span class="function"><a href="loudmouth-LmConnection.html#lm-connection-new">lm_connection_new</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;myserver&quot;</span><span class="gtkdoc opt">);</span>
+proxy <span class="gtkdoc opt">=</span> <span class="function"><a href="loudmouth-LmProxy.html#lm-proxy-new-with-server">lm_proxy_new_with_server</a></span> <span class="gtkdoc opt">(</span>LM_PROXY_TYPE_HTTP<span class="gtkdoc opt">,</span>
+               <span class="string">&quot;myproxyserver&quot;</span><span class="gtkdoc opt">,</span>
+               <span class="number">8080</span><span class="gtkdoc opt">);</span>
+<span class="function"><a href="loudmouth-LmConnection.html#lm-connection-set-proxy">lm_connection_set_proxy</a></span> <span class="gtkdoc opt">(</span>connection<span class="gtkdoc opt">,</span> proxy<span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">...</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmProxy.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="lm-proxy-new"></a><h3>lm_proxy_new ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="returnvalue">LmProxy</span></a> *
+lm_proxy_new (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxyType" title="enum LmProxyType"><span class="type">LmProxyType</span></a> type</code></em>);</pre>
+<p>Creates a new Proxy. Used <a class="link" href="loudmouth-LmConnection.html#lm-connection-set-proxy" title="lm_connection_set_proxy ()"><span class="type">lm_connection_set_proxy</span></a> to make a connection
+user this proxy.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of the new proxy</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.6.2.6"></a><h4>Returns</h4>
+<p> a newly create proxy</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-new-with-server"></a><h3>lm_proxy_new_with_server ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="returnvalue">LmProxy</span></a> *
+lm_proxy_new_with_server (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxyType" title="enum LmProxyType"><span class="type">LmProxyType</span></a> type</code></em>,
+                          <em class="parameter"><code>const <span class="type">gchar</span> *server</code></em>,
+                          <em class="parameter"><code><span class="type">guint</span> port</code></em>);</pre>
+<p>Creates a new Proxy. Use <a class="link" href="loudmouth-LmConnection.html#lm-connection-set-proxy" title="lm_connection_set_proxy ()"><span class="type">lm_connection_set_proxy</span></a> to make a connection
+user this proxy.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of the new proxy</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>server</p></td>
+<td class="parameter_description"><p>the proxy server</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port</p></td>
+<td class="parameter_description"><p>the proxy server port</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.6.3.6"></a><h4>Returns</h4>
+<p> a newly create proxy</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-get-type"></a><h3>lm_proxy_get_type ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmProxy.html#LmProxyType" title="enum LmProxyType"><span class="returnvalue">LmProxyType</span></a>
+lm_proxy_get_type (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>);</pre>
+<p>Fetches the proxy type</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.6.4.6"></a><h4>Returns</h4>
+<p> the type</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-set-type"></a><h3>lm_proxy_set_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_proxy_set_type (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>,
+                   <em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxyType" title="enum LmProxyType"><span class="type">LmProxyType</span></a> type</code></em>);</pre>
+<p>Sets the proxy type for <em class="parameter"><code>proxy</code></em>
+ to <em class="parameter"><code>type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxyType" title="enum LmProxyType"><span class="type">LmProxyType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-get-server"></a><h3>lm_proxy_get_server ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+lm_proxy_get_server (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>);</pre>
+<p>Fetches the server address that <em class="parameter"><code>proxy</code></em>
+ is using.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.6.6.6"></a><h4>Returns</h4>
+<p> the proxy server address</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-set-server"></a><h3>lm_proxy_set_server ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_proxy_set_server (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>,
+                     <em class="parameter"><code>const <span class="type">gchar</span> *server</code></em>);</pre>
+<p>Sets the server address for <em class="parameter"><code>proxy</code></em>
+ to <em class="parameter"><code>server</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>server</p></td>
+<td class="parameter_description"><p>Address of the proxy server</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-get-port"></a><h3>lm_proxy_get_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+lm_proxy_get_port (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>);</pre>
+<p>Fetches the port that <em class="parameter"><code>proxy</code></em>
+ is using.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.6.8.6"></a><h4>Returns</h4>
+<p> The port</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-set-port"></a><h3>lm_proxy_set_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_proxy_set_port (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>,
+                   <em class="parameter"><code><span class="type">guint</span> port</code></em>);</pre>
+<p>Sets the server port that <em class="parameter"><code>proxy</code></em>
+ will be using.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port</p></td>
+<td class="parameter_description"><p>proxy server port</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-get-username"></a><h3>lm_proxy_get_username ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+lm_proxy_get_username (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>);</pre>
+<p>Fetches the username that <em class="parameter"><code>proxy</code></em>
+ is using.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.6.10.6"></a><h4>Returns</h4>
+<p> the username</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-set-username"></a><h3>lm_proxy_set_username ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_proxy_set_username (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *username</code></em>);</pre>
+<p>Sets the username for <em class="parameter"><code>proxy</code></em>
+ to <em class="parameter"><code>username</code></em>
+ or <code class="literal">NULL</code> to unset.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p>Username</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-get-password"></a><h3>lm_proxy_get_password ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+lm_proxy_get_password (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>);</pre>
+<p>Fetches the password that <em class="parameter"><code>proxy</code></em>
+ is using.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.6.12.6"></a><h4>Returns</h4>
+<p> the proxy password</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-set-password"></a><h3>lm_proxy_set_password ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_proxy_set_password (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *password</code></em>);</pre>
+<p>Sets the password for <em class="parameter"><code>proxy</code></em>
+ to <em class="parameter"><code>password</code></em>
+ or <code class="literal">NULL</code> to unset.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>password</p></td>
+<td class="parameter_description"><p>Password</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-ref"></a><h3>lm_proxy_ref ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="returnvalue">LmProxy</span></a> *
+lm_proxy_ref (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>);</pre>
+<p>Adds a reference to <em class="parameter"><code>proxy</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.6.14.6"></a><h4>Returns</h4>
+<p> the proxy</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-proxy-unref"></a><h3>lm_proxy_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_proxy_unref (<em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>);</pre>
+<p>Removes a reference from <em class="parameter"><code>proxy</code></em>
+. When no more references are present
+<em class="parameter"><code>proxy</code></em>
+ is freed.</p>
+<div class="refsect3">
+<a name="id-1.2.8.6.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmProxy.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="LmProxy"></a><h3>LmProxy</h3>
+<pre class="programlisting">typedef struct _LmProxy LmProxy;</pre>
+<p>This should not be accessed directly. Use the accessor functions as described below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmProxyType"></a><h3>enum LmProxyType</h3>
+<p>The type of the proxy.</p>
+<div class="refsect3">
+<a name="id-1.2.8.7.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LM-PROXY-TYPE-NONE:CAPS"></a>LM_PROXY_TYPE_NONE</p></td>
+<td class="enum_member_description">
+<p>Unused</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-PROXY-TYPE-HTTP:CAPS"></a>LM_PROXY_TYPE_HTTP</p></td>
+<td class="enum_member_description">
+<p>An HTTP proxy.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

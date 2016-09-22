@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Loudmouth Reference Manual: LmSSL</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Loudmouth Reference Manual">
+<link rel="up" href="ch01.html" title="Loudmouth">
+<link rel="prev" href="loudmouth-LmMessageNode.html" title="LmMessageNode">
+<link rel="next" href="loudmouth-LmProxy.html" title="LmProxy">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#loudmouth-LmSSL.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="loudmouth-LmMessageNode.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="loudmouth-LmProxy.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="loudmouth-LmSSL"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="loudmouth-LmSSL.top_of_page"></a>LmSSL</span></h2>
+<p>LmSSL — SSL struct for SSL support in Loudmouth</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="loudmouth-LmSSL.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmSSL.html#LmSSLResponse" title="enum LmSSLResponse"><span class="returnvalue">LmSSLResponse</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="loudmouth-LmSSL.html#LmSSLFunction" title="LmSSLFunction ()">*LmSSLFunction</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="returnvalue">LmSSL</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmSSL.html#lm-ssl-new" title="lm_ssl_new ()">lm_ssl_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmSSL.html#lm-ssl-is-supported" title="lm_ssl_is_supported ()">lm_ssl_is_supported</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmSSL.html#lm-ssl-get-fingerprint" title="lm_ssl_get_fingerprint ()">lm_ssl_get_fingerprint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmSSL.html#lm-ssl-set-ca" title="lm_ssl_set_ca ()">lm_ssl_set_ca</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmSSL.html#lm-ssl-set-cipher-list" title="lm_ssl_set_cipher_list ()">lm_ssl_set_cipher_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="returnvalue">LmSSL</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmSSL.html#lm-ssl-ref" title="lm_ssl_ref ()">lm_ssl_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmSSL.html#lm-ssl-unref" title="lm_ssl_unref ()">lm_ssl_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmSSL.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL">LmSSL</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="loudmouth-LmSSL.html#LmCertificateStatus" title="enum LmCertificateStatus">LmCertificateStatus</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="loudmouth-LmSSL.html#LmSSLStatus" title="enum LmSSLStatus">LmSSLStatus</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="loudmouth-LmSSL.html#LmSSLResponse" title="enum LmSSLResponse">LmSSLResponse</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmSSL.description"></a><h2>Description</h2>
+<p>Use this together with an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to get the connection to use SSL. Example of how to use the <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> API.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7</pre></td>
+        <td class="listing_code"><pre class="programlisting">LmConnection <span class="gtkdoc opt">*</span>connection<span class="gtkdoc opt">;</span>
+LmSSL        <span class="gtkdoc opt">*</span>ssl<span class="gtkdoc opt">;</span>
+
+connection <span class="gtkdoc opt">=</span> <span class="function"><a href="loudmouth-LmConnection.html#lm-connection-new">lm_connection_new</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;myserver&quot;</span><span class="gtkdoc opt">);</span>
+ssl <span class="gtkdoc opt">=</span> <span class="function"><a href="loudmouth-LmSSL.html#lm-ssl-new">lm_ssl_new</a></span> <span class="gtkdoc opt">(</span>NULL<span class="gtkdoc opt">,</span> my_ssl_func<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+<span class="function"><a href="loudmouth-LmConnection.html#lm-connection-set-ssl">lm_connection_set_ssl</a></span> <span class="gtkdoc opt">(</span>connection<span class="gtkdoc opt">,</span> ssl<span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">...</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmSSL.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="LmSSLFunction"></a><h3>LmSSLFunction ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmSSL.html#LmSSLResponse" title="enum LmSSLResponse"><span class="returnvalue">LmSSLResponse</span></a>
+<span class="c_punctuation">(</span>*LmSSLFunction<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> *ssl</code></em>,
+                  <em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSLStatus" title="enum LmSSLStatus"><span class="type">LmSSLStatus</span></a> status</code></em>,
+                  <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+<p>This function is called if something goes wrong during the connecting phase.</p>
+<div class="refsect3">
+<a name="id-1.2.7.6.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ssl</p></td>
+<td class="parameter_description"><p>An <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>status</p></td>
+<td class="parameter_description"><p>The status informing what went wrong.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data provided in the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.6.2.6"></a><h4>Returns</h4>
+<p> User should return <a class="link" href="loudmouth-LmSSL.html#LM-SSL-RESPONSE-CONTINUE:CAPS"><span class="type">LM_SSL_RESPONSE_CONTINUE</span></a> if connection should proceed and otherwise <a class="link" href="loudmouth-LmSSL.html#LM-SSL-RESPONSE-STOP:CAPS"><span class="type">LM_SSL_RESPONSE_STOP</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-ssl-new"></a><h3>lm_ssl_new ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="returnvalue">LmSSL</span></a> *
+lm_ssl_new (<em class="parameter"><code>const <span class="type">gchar</span> *expected_fingerprint</code></em>,
+            <em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSLFunction" title="LmSSLFunction ()"><span class="type">LmSSLFunction</span></a> ssl_function</code></em>,
+            <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>,
+            <em class="parameter"><code><span class="type">GDestroyNotify</span> notify</code></em>);</pre>
+<p>Creates a new SSL struct, call <a class="link" href="loudmouth-LmConnection.html#lm-connection-set-ssl" title="lm_connection_set_ssl ()"><span class="type">lm_connection_set_ssl</span></a> to use it.</p>
+<div class="refsect3">
+<a name="id-1.2.7.6.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>expected_fingerprint</p></td>
+<td class="parameter_description"><p>The expected fingerprint. <em class="parameter"><code>ssl_function</code></em>
+will be called if there is a mismatch. <code class="literal">NULL</code> if you are not interested in this check.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ssl_function</p></td>
+<td class="parameter_description"><p>Callback called to inform the user of a problem during setting up the SSL connection and how to proceed. If <code class="literal">NULL</code> is passed the default function that always continues will be used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data sent with the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>notify</p></td>
+<td class="parameter_description"><p>Function to free <em class="parameter"><code>user_dataa</code></em>
+when the connection is finished. <code class="literal">NULL</code> if <em class="parameter"><code>user_data</code></em>
+should not be freed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.6.3.6"></a><h4>Returns</h4>
+<p> A new <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> struct.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-ssl-is-supported"></a><h3>lm_ssl_is_supported ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_ssl_is_supported (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Checks whether Loudmouth supports SSL or not.</p>
+<div class="refsect3">
+<a name="id-1.2.7.6.4.5"></a><h4>Returns</h4>
+<p> <span class="type">TRUE</span> if this installation of Loudmouth supports SSL, otherwise returns <span class="type">FALSE</span>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-ssl-get-fingerprint"></a><h3>lm_ssl_get_fingerprint ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+lm_ssl_get_fingerprint (<em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> *ssl</code></em>);</pre>
+<p>Returns the fingerprint of the remote server's certificate.</p>
+<div class="refsect3">
+<a name="id-1.2.7.6.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ssl</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.6.5.6"></a><h4>Returns</h4>
+<p> A null terminated string representing the fingerprint or <code class="literal">NULL</code> if unknown.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-ssl-set-ca"></a><h3>lm_ssl_set_ca ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_ssl_set_ca (<em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> *ssl</code></em>,
+               <em class="parameter"><code>const <span class="type">gchar</span> *ca_path</code></em>);</pre>
+<p>Sets a path to certificates which should be trusted.</p>
+<div class="refsect3">
+<a name="id-1.2.7.6.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ssl</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ca_path</p></td>
+<td class="parameter_description"><p>path to a certificate or a directory containing certificates</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-ssl-set-cipher-list"></a><h3>lm_ssl_set_cipher_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_ssl_set_cipher_list (<em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> *ssl</code></em>,
+                        <em class="parameter"><code>const <span class="type">gchar</span> *cipher_list</code></em>);</pre>
+<p>Sets the list of availeble ciphers.</p>
+<div class="refsect3">
+<a name="id-1.2.7.6.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ssl</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cipher_list</p></td>
+<td class="parameter_description"><p>list of ciphers</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-ssl-ref"></a><h3>lm_ssl_ref ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="returnvalue">LmSSL</span></a> *
+lm_ssl_ref (<em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> *ssl</code></em>);</pre>
+<p>Adds a reference to <em class="parameter"><code>ssl</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.7.6.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ssl</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.6.8.6"></a><h4>Returns</h4>
+<p> the ssl</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-ssl-unref"></a><h3>lm_ssl_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_ssl_unref (<em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> *ssl</code></em>);</pre>
+<p>Removes a reference from <em class="parameter"><code>ssl</code></em>
+. When no more references are present
+<em class="parameter"><code>ssl</code></em>
+ is freed.</p>
+<div class="refsect3">
+<a name="id-1.2.7.6.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ssl</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmSSL.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="LmSSL"></a><h3>LmSSL</h3>
+<pre class="programlisting">typedef struct _LmSSL LmSSL;</pre>
+<p>This should not be accessed directly. Use the accessor functions as described below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmCertificateStatus"></a><h3>enum LmCertificateStatus</h3>
+<p>Provides information of the status of a certain certificate.</p>
+<div class="refsect3">
+<a name="id-1.2.7.7.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LM-CERT-INVALID:CAPS"></a>LM_CERT_INVALID</p></td>
+<td class="enum_member_description">
+<p>The certificate is invalid.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-CERT-ISSUER-NOT-FOUND:CAPS"></a>LM_CERT_ISSUER_NOT_FOUND</p></td>
+<td class="enum_member_description">
+<p>The issuer of the certificate is not found.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-CERT-REVOKED:CAPS"></a>LM_CERT_REVOKED</p></td>
+<td class="enum_member_description">
+<p>The certificate has been revoked.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmSSLStatus"></a><h3>enum LmSSLStatus</h3>
+<p>Provides information about something gone wrong when trying to setup the SSL connection.</p>
+<div class="refsect3">
+<a name="id-1.2.7.7.4.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-STATUS-NO-CERT-FOUND:CAPS"></a>LM_SSL_STATUS_NO_CERT_FOUND</p></td>
+<td class="enum_member_description">
+<p>The server doesn't provide a certificate.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-STATUS-UNTRUSTED-CERT:CAPS"></a>LM_SSL_STATUS_UNTRUSTED_CERT</p></td>
+<td class="enum_member_description">
+<p>The certification can not be trusted.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-STATUS-CERT-EXPIRED:CAPS"></a>LM_SSL_STATUS_CERT_EXPIRED</p></td>
+<td class="enum_member_description">
+<p>The certificate has expired.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-STATUS-CERT-NOT-ACTIVATED:CAPS"></a>LM_SSL_STATUS_CERT_NOT_ACTIVATED</p></td>
+<td class="enum_member_description">
+<p>The certificate has not been activated.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-STATUS-CERT-HOSTNAME-MISMATCH:CAPS"></a>LM_SSL_STATUS_CERT_HOSTNAME_MISMATCH</p></td>
+<td class="enum_member_description">
+<p>The server hostname doesn't match the one in the certificate.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-STATUS-CERT-FINGERPRINT-MISMATCH:CAPS"></a>LM_SSL_STATUS_CERT_FINGERPRINT_MISMATCH</p></td>
+<td class="enum_member_description">
+<p>The fingerprint doesn't match your expected.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-STATUS-GENERIC-ERROR:CAPS"></a>LM_SSL_STATUS_GENERIC_ERROR</p></td>
+<td class="enum_member_description">
+<p>Some other error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmSSLResponse"></a><h3>enum LmSSLResponse</h3>
+<p>Used to inform <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> if you want to stop due to an error reported or if you want to continue to connect.</p>
+<div class="refsect3">
+<a name="id-1.2.7.7.5.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-RESPONSE-CONTINUE:CAPS"></a>LM_SSL_RESPONSE_CONTINUE</p></td>
+<td class="enum_member_description">
+<p>Continue to connect.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-SSL-RESPONSE-STOP:CAPS"></a>LM_SSL_RESPONSE_STOP</p></td>
+<td class="enum_member_description">
+<p>Stop the connection.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

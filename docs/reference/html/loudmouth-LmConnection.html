@@ -1,0 +1,1897 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Loudmouth Reference Manual: LmConnection</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Loudmouth Reference Manual">
+<link rel="up" href="ch01.html" title="Loudmouth">
+<link rel="prev" href="ch01.html" title="Loudmouth">
+<link rel="next" href="loudmouth-LmError.html" title="LmError">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#loudmouth-LmConnection.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="loudmouth-LmError.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="loudmouth-LmConnection"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="loudmouth-LmConnection.top_of_page"></a>LmConnection</span></h2>
+<p>LmConnection — A client connection to the server</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="loudmouth-LmConnection.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#LM-CONNECTION:CAPS" title="LM_CONNECTION()">LM_CONNECTION</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="loudmouth-LmConnection.html#LmResultFunction" title="LmResultFunction ()">*LmResultFunction</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="loudmouth-LmConnection.html#LmDisconnectFunction" title="LmDisconnectFunction ()">*LmDisconnectFunction</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="returnvalue">LmConnection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-new" title="lm_connection_new ()">lm_connection_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="returnvalue">LmConnection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-new-with-context" title="lm_connection_new_with_context ()">lm_connection_new_with_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-open" title="lm_connection_open ()">lm_connection_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-open-and-block" title="lm_connection_open_and_block ()">lm_connection_open_and_block</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-close" title="lm_connection_close ()">lm_connection_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-authenticate" title="lm_connection_authenticate ()">lm_connection_authenticate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-authenticate-and-block" title="lm_connection_authenticate_and_block ()">lm_connection_authenticate_and_block</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-get-keep-alive-rate" title="lm_connection_get_keep_alive_rate ()">lm_connection_get_keep_alive_rate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-set-keep-alive-rate" title="lm_connection_set_keep_alive_rate ()">lm_connection_set_keep_alive_rate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-is-open" title="lm_connection_is_open ()">lm_connection_is_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-is-authenticated" title="lm_connection_is_authenticated ()">lm_connection_is_authenticated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-get-server" title="lm_connection_get_server ()">lm_connection_get_server</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-set-server" title="lm_connection_set_server ()">lm_connection_set_server</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-get-jid" title="lm_connection_get_jid ()">lm_connection_get_jid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-set-jid" title="lm_connection_set_jid ()">lm_connection_set_jid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-get-port" title="lm_connection_get_port ()">lm_connection_get_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-set-port" title="lm_connection_set_port ()">lm_connection_set_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="returnvalue">LmSSL</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-get-ssl" title="lm_connection_get_ssl ()">lm_connection_get_ssl</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-set-ssl" title="lm_connection_set_ssl ()">lm_connection_set_ssl</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="returnvalue">LmProxy</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-get-proxy" title="lm_connection_get_proxy ()">lm_connection_get_proxy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-set-proxy" title="lm_connection_set_proxy ()">lm_connection_set_proxy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-send" title="lm_connection_send ()">lm_connection_send</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-send-with-reply" title="lm_connection_send_with_reply ()">lm_connection_send_with_reply</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="returnvalue">LmMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-send-with-reply-and-block" title="lm_connection_send_with_reply_and_block ()">lm_connection_send_with_reply_and_block</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-unregister-reply-handler" title="lm_connection_unregister_reply_handler ()">lm_connection_unregister_reply_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-register-message-handler" title="lm_connection_register_message_handler ()">lm_connection_register_message_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-unregister-message-handler" title="lm_connection_unregister_message_handler ()">lm_connection_unregister_message_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-set-disconnect-function" title="lm_connection_set_disconnect_function ()">lm_connection_set_disconnect_function</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-send-raw" title="lm_connection_send_raw ()">lm_connection_send_raw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmConnection.html#LmConnectionState" title="enum LmConnectionState"><span class="returnvalue">LmConnectionState</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-get-state" title="lm_connection_get_state ()">lm_connection_get_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="returnvalue">LmConnection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-ref" title="lm_connection_ref ()">lm_connection_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-unref" title="lm_connection_unref ()">lm_connection_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmConnection.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="loudmouth-LmConnection.html#LM-CONNECTION-DEFAULT-PORT:CAPS" title="LM_CONNECTION_DEFAULT_PORT">LM_CONNECTION_DEFAULT_PORT</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="loudmouth-LmConnection.html#LM-CONNECTION-DEFAULT-PORT-SSL:CAPS" title="LM_CONNECTION_DEFAULT_PORT_SSL">LM_CONNECTION_DEFAULT_PORT_SSL</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection">LmConnection</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="loudmouth-LmConnection.html#LmHandlerResult" title="enum LmHandlerResult">LmHandlerResult</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="loudmouth-LmConnection.html#LmHandlerPriority" title="enum LmHandlerPriority">LmHandlerPriority</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="loudmouth-LmConnection.html#LmDisconnectReason" title="enum LmDisconnectReason">LmDisconnectReason</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="loudmouth-LmConnection.html#LmConnectionState" title="enum LmConnectionState">LmConnectionState</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmConnection.description"></a><h2>Description</h2>
+<p>An example of how to use Loudmouth with the synchronous API.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">int</span>
+<span class="function">main</span> <span class="gtkdoc opt">(</span><span class="gtkdoc kwb">int</span> argc<span class="gtkdoc opt">,</span> <span class="gtkdoc kwb">char</span> <span class="gtkdoc opt">**</span>argv<span class="gtkdoc opt">)</span>
+<span class="gtkdoc opt">{</span>
+     LmConnection <span class="gtkdoc opt">*</span>connection<span class="gtkdoc opt">;</span>
+     GError       <span class="gtkdoc opt">*</span>error <span class="gtkdoc opt">=</span> NULL<span class="gtkdoc opt">;</span>
+     gint          i<span class="gtkdoc opt">;</span>
+     LmMessage    <span class="gtkdoc opt">*</span>m<span class="gtkdoc opt">;</span>
+
+     connection <span class="gtkdoc opt">=</span> <span class="function"><a href="loudmouth-LmConnection.html#lm-connection-new">lm_connection_new</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;myserver&quot;</span><span class="gtkdoc opt">);</span>
+
+     <span class="keyword">if</span> <span class="gtkdoc opt">(!</span><span class="function"><a href="loudmouth-LmConnection.html#lm-connection-open-and-block">lm_connection_open_and_block</a></span> <span class="gtkdoc opt">(</span>connection<span class="gtkdoc opt">, &amp;</span>error<span class="gtkdoc opt">)) {</span>
+         <span class="function">g_error</span> <span class="gtkdoc opt">(</span><span class="string">&quot;Failed to open: %s</span><span class="gtkdoc esc">\n</span><span class="string">&quot;</span><span class="gtkdoc opt">,</span> error<span class="gtkdoc opt">-&gt;</span>message<span class="gtkdoc opt">);</span>
+     <span class="gtkdoc opt">}</span>
+
+     <span class="keyword">if</span> <span class="gtkdoc opt">(!</span><span class="function"><a href="loudmouth-LmConnection.html#lm-connection-authenticate-and-block">lm_connection_authenticate_and_block</a></span> <span class="gtkdoc opt">(</span>connection<span class="gtkdoc opt">,</span>
+                                                <span class="string">&quot;username&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;password&quot;</span><span class="gtkdoc opt">,</span>
+                                                <span class="string">&quot;resource&quot;</span><span class="gtkdoc opt">,</span>
+                                                <span class="gtkdoc opt">&amp;</span>error<span class="gtkdoc opt">)) {</span>
+         <span class="function">g_error</span> <span class="gtkdoc opt">(</span><span class="string">&quot;Failed to authenticate: %s</span><span class="gtkdoc esc">\n</span><span class="string">&quot;</span><span class="gtkdoc opt">,</span> error<span class="gtkdoc opt">-&gt;</span>message<span class="gtkdoc opt">);</span>
+     <span class="gtkdoc opt">}</span>
+
+     m <span class="gtkdoc opt">=</span> <span class="function"><a href="loudmouth-LmMessage.html#lm-message-new">lm_message_new</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;recipient&quot;</span><span class="gtkdoc opt">,</span> LM_MESSAGE_TYPE_MESSAGE<span class="gtkdoc opt">);</span>
+     <span class="function"><a href="loudmouth-LmMessageNode.html#lm-message-node-add-child">lm_message_node_add_child</a></span> <span class="gtkdoc opt">(</span>m<span class="gtkdoc opt">-&gt;</span>node<span class="gtkdoc opt">,</span> <span class="string">&quot;body&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;message&quot;</span><span class="gtkdoc opt">);</span>
+
+     <span class="keyword">if</span> <span class="gtkdoc opt">(!</span><span class="function"><a href="loudmouth-LmConnection.html#lm-connection-send">lm_connection_send</a></span> <span class="gtkdoc opt">(</span>connection<span class="gtkdoc opt">,</span> m<span class="gtkdoc opt">, &amp;</span>error<span class="gtkdoc opt">)) {</span>
+         <span class="function">g_error</span> <span class="gtkdoc opt">(</span><span class="string">&quot;Send failed: %s</span><span class="gtkdoc esc">\n</span><span class="string">&quot;</span><span class="gtkdoc opt">,</span> error<span class="gtkdoc opt">-&gt;</span>message<span class="gtkdoc opt">);</span>
+     <span class="gtkdoc opt">}</span>
+
+     <span class="function"><a href="loudmouth-LmMessage.html#lm-message-unref">lm_message_unref</a></span> <span class="gtkdoc opt">(</span>m<span class="gtkdoc opt">);</span>
+
+     <span class="function"><a href="loudmouth-LmConnection.html#lm-connection-close">lm_connection_close</a></span> <span class="gtkdoc opt">(</span>connection<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+     <span class="function"><a href="loudmouth-LmConnection.html#lm-connection-unref">lm_connection_unref</a></span> <span class="gtkdoc opt">(</span>connection<span class="gtkdoc opt">);</span>
+
+     <span class="keyword">return</span> <span class="number">0</span><span class="gtkdoc opt">;</span>
+<span class="gtkdoc opt">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmConnection.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="LM-CONNECTION:CAPS"></a><h3>LM_CONNECTION()</h3>
+<pre class="programlisting">#define LM_CONNECTION(o) (LmConnection *) o;
+</pre>
+<p>Convenience macro used to cast a pointer to a <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>o</p></td>
+<td class="parameter_description"><p>pointer to cast</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmResultFunction"></a><h3>LmResultFunction ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*LmResultFunction<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                     <em class="parameter"><code><span class="type">gboolean</span> success</code></em>,
+                     <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+<p>Callback for informing if an asynchronous operation was successful.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>success</p></td>
+<td class="parameter_description"><p>the result, <code class="literal">TRUE</code> if operation succeeded, otherwise <code class="literal">FALSE</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data passed when function being called.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmDisconnectFunction"></a><h3>LmDisconnectFunction ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*LmDisconnectFunction<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                         <em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmDisconnectReason" title="enum LmDisconnectReason"><span class="type">LmDisconnectReason</span></a> reason</code></em>,
+                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+<p>Callback called when a connection is closed.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>reason</p></td>
+<td class="parameter_description"><p>the reason the connection was closed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data passed when function being called.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-new"></a><h3>lm_connection_new ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="returnvalue">LmConnection</span></a> *
+lm_connection_new (<em class="parameter"><code>const <span class="type">gchar</span> *server</code></em>);</pre>
+<p>Creates a new closed connection. To open the connection call
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-open" title="lm_connection_open ()"><code class="function">lm_connection_open()</code></a>. <em class="parameter"><code>server</code></em>
+ can be <span class="type">NULL</span> but must be set before calling <a class="link" href="loudmouth-LmConnection.html#lm-connection-open" title="lm_connection_open ()"><code class="function">lm_connection_open()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>server</p></td>
+<td class="parameter_description"><p>The hostname to the server for the connection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.5.6"></a><h4>Returns</h4>
+<p> A newly created LmConnection, should be unreffed with <a class="link" href="loudmouth-LmConnection.html#lm-connection-unref" title="lm_connection_unref ()"><code class="function">lm_connection_unref()</code></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-new-with-context"></a><h3>lm_connection_new_with_context ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="returnvalue">LmConnection</span></a> *
+lm_connection_new_with_context (<em class="parameter"><code>const <span class="type">gchar</span> *server</code></em>,
+                                <em class="parameter"><code><span class="type">GMainContext</span> *context</code></em>);</pre>
+<p>Creates a new closed connection running in a certain context. To open the
+connection call <a class="link" href="loudmouth-LmConnection.html#lm-connection-open" title="lm_connection_open ()"><span class="type">lm_connection_open</span></a>. <em class="parameter"><code>server</code></em>
+ can be <span class="type">NULL</span> but must be set
+before calling <a class="link" href="loudmouth-LmConnection.html#lm-connection-open" title="lm_connection_open ()"><span class="type">lm_connection_open</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>server</p></td>
+<td class="parameter_description"><p>The hostname to the server for the connection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context this connection should be running in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.6.6"></a><h4>Returns</h4>
+<p> A newly created LmConnection, should be unreffed with <a class="link" href="loudmouth-LmConnection.html#lm-connection-unref" title="lm_connection_unref ()"><code class="function">lm_connection_unref()</code></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-open"></a><h3>lm_connection_open ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_open (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                    <em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmResultFunction" title="LmResultFunction ()"><span class="type">LmResultFunction</span></a> function</code></em>,
+                    <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>,
+                    <em class="parameter"><code><span class="type">GDestroyNotify</span> notify</code></em>,
+                    <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>An async call to open <em class="parameter"><code>connection</code></em>
+. When the connection is open <em class="parameter"><code>function</code></em>
+ will be called.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to open</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Callback function that will be called when the connection is open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data that will be passed to <em class="parameter"><code>function</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>notify</p></td>
+<td class="parameter_description"><p>Function for freeing that user_data, can be NULL.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>location to store error, or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.7.6"></a><h4>Returns</h4>
+<p> <span class="type">TRUE</span> if everything went fine, otherwise <span class="type">FALSE</span>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-open-and-block"></a><h3>lm_connection_open_and_block ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_open_and_block (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                              <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Opens <em class="parameter"><code>connection</code></em>
+ and waits until the stream is setup.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to open</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>location to store error, or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.8.6"></a><h4>Returns</h4>
+<p> <span class="type">TRUE</span> if no errors where encountered during opening and stream setup successfully, <span class="type">FALSE</span> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-close"></a><h3>lm_connection_close ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_close (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                     <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>A synchronous call to close the connection. When returning the connection is considered to be closed and can be opened again with <a class="link" href="loudmouth-LmConnection.html#lm-connection-open" title="lm_connection_open ()"><code class="function">lm_connection_open()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to close</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>location to store error, or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.9.6"></a><h4>Returns</h4>
+<p> Returns <span class="type">TRUE</span> if no errors where detected, otherwise <span class="type">FALSE</span>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-authenticate"></a><h3>lm_connection_authenticate ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_authenticate (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                            <em class="parameter"><code>const <span class="type">gchar</span> *username</code></em>,
+                            <em class="parameter"><code>const <span class="type">gchar</span> *password</code></em>,
+                            <em class="parameter"><code>const <span class="type">gchar</span> *resource</code></em>,
+                            <em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmResultFunction" title="LmResultFunction ()"><span class="type">LmResultFunction</span></a> function</code></em>,
+                            <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>,
+                            <em class="parameter"><code><span class="type">GDestroyNotify</span> notify</code></em>,
+                            <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Tries to authenticate a user against the server. The <span class="type">LmResult</span> in the result callback <em class="parameter"><code>function</code></em>
+ will say whether it succeeded or not.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to authenticate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p>Username used to authenticate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>password</p></td>
+<td class="parameter_description"><p>Password corresponding to <em class="parameter"><code>username</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>Resource used for this connection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Callback called when authentication is finished.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Userdata passed to <em class="parameter"><code>function</code></em>
+when called.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>notify</p></td>
+<td class="parameter_description"><p>Destroy function to free the memory used by <em class="parameter"><code>user_data</code></em>
+, can be NULL.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>location to store error, or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.10.6"></a><h4>Returns</h4>
+<p> <span class="type">TRUE</span> if no errors where detected while sending the authentication message, <span class="type">FALSE</span> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-authenticate-and-block"></a><h3>lm_connection_authenticate_and_block ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_authenticate_and_block (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                                      <em class="parameter"><code>const <span class="type">gchar</span> *username</code></em>,
+                                      <em class="parameter"><code>const <span class="type">gchar</span> *password</code></em>,
+                                      <em class="parameter"><code>const <span class="type">gchar</span> *resource</code></em>,
+                                      <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Tries to authenticate a user against the server. This function blocks until a reply to the authentication attempt is returned and returns whether it was successful or not.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p>Username used to authenticate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>password</p></td>
+<td class="parameter_description"><p>Password corresponding to <em class="parameter"><code>username</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>Resource used for this connection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>location to store error, or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.11.6"></a><h4>Returns</h4>
+<p> <span class="type">TRUE</span> if no errors where detected and authentication was successful. <span class="type">FALSE</span> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-get-keep-alive-rate"></a><h3>lm_connection_get_keep_alive_rate ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+lm_connection_get_keep_alive_rate (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Get the keep alive rate, in seconds. Zero is returned if no keep alive rate has been set.</p>
+<p>Since 1.3.5</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-set-keep-alive-rate"></a><h3>lm_connection_set_keep_alive_rate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_set_keep_alive_rate (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                                   <em class="parameter"><code><span class="type">guint</span> rate</code></em>);</pre>
+<p>Set the keep alive rate, in seconds. Set to 0 to prevent keep alive messages to be sent.
+A keep alive message is a single space character.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rate</p></td>
+<td class="parameter_description"><p>Number of seconds between keep alive packages are sent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-is-open"></a><h3>lm_connection_is_open ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_is_open (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Check if the <em class="parameter"><code>connection</code></em>
+ is currently open.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to check if it is open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.14.6"></a><h4>Returns</h4>
+<p> <span class="type">TRUE</span> if connection is open and <span class="type">FALSE</span> if it is closed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-is-authenticated"></a><h3>lm_connection_is_authenticated ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_is_authenticated (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Check if <em class="parameter"><code>connection</code></em>
+ is authenticated.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to check if it is authenticated</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.15.6"></a><h4>Returns</h4>
+<p> <span class="type">TRUE</span> if connection is authenticated, <span class="type">FALSE</span> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-get-server"></a><h3>lm_connection_get_server ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+lm_connection_get_server (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Fetches the server address that <em class="parameter"><code>connection</code></em>
+ is using.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.16.6"></a><h4>Returns</h4>
+<p> the server address</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-set-server"></a><h3>lm_connection_set_server ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_set_server (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                          <em class="parameter"><code>const <span class="type">gchar</span> *server</code></em>);</pre>
+<p>Sets the server address for <em class="parameter"><code>connection</code></em>
+ to <em class="parameter"><code>server</code></em>
+. Notice that <em class="parameter"><code>connection</code></em>
+
+can't be open while doing this.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>server</p></td>
+<td class="parameter_description"><p>Address of the server</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-get-jid"></a><h3>lm_connection_get_jid ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+lm_connection_get_jid (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Fetches the jid set for <em class="parameter"><code>connection</code></em>
+ is using.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.18.6"></a><h4>Returns</h4>
+<p> the jid</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-set-jid"></a><h3>lm_connection_set_jid ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_set_jid (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *jid</code></em>);</pre>
+<p>Sets the JID to be used for <em class="parameter"><code>connection</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>jid</p></td>
+<td class="parameter_description"><p>JID to be used for <em class="parameter"><code>connection</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-get-port"></a><h3>lm_connection_get_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+lm_connection_get_port (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Fetches the port that <em class="parameter"><code>connection</code></em>
+ is using.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.20.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-set-port"></a><h3>lm_connection_set_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_set_port (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                        <em class="parameter"><code><span class="type">guint</span> port</code></em>);</pre>
+<p>Sets the server port that <em class="parameter"><code>connection</code></em>
+ will be using.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port</p></td>
+<td class="parameter_description"><p>server port</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-get-ssl"></a><h3>lm_connection_get_ssl ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="returnvalue">LmSSL</span></a> *
+lm_connection_get_ssl (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Returns the SSL struct if the connection is using one.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.22.6"></a><h4>Returns</h4>
+<p> The ssl struct or <code class="literal">NULL</code> if no proxy is used.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-set-ssl"></a><h3>lm_connection_set_ssl ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_set_ssl (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                       <em class="parameter"><code><a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a> *ssl</code></em>);</pre>
+<p>Sets SSL struct or unset if <em class="parameter"><code>ssl</code></em>
+ is <code class="literal">NULL</code>. If set <em class="parameter"><code>connection</code></em>
+ will use SSL to for the connection.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>An <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ssl</p></td>
+<td class="parameter_description"><p>An <a class="link" href="loudmouth-LmSSL.html#LmSSL" title="LmSSL"><span class="type">LmSSL</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-get-proxy"></a><h3>lm_connection_get_proxy ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="returnvalue">LmProxy</span></a> *
+lm_connection_get_proxy (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Returns the proxy if the connection is using one.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.24.6"></a><h4>Returns</h4>
+<p> The proxy or <code class="literal">NULL</code> if no proxy is used.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-set-proxy"></a><h3>lm_connection_set_proxy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_set_proxy (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                         <em class="parameter"><code><a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a> *proxy</code></em>);</pre>
+<p>Sets the proxy to use for this connection. To unset pass <span class="type">NULL</span>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmProxy.html#LmProxy" title="LmProxy"><span class="type">LmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-send"></a><h3>lm_connection_send ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_send (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                    <em class="parameter"><code><a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="type">LmMessage</span></a> *message</code></em>,
+                    <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Asynchronous call to send a message.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.26.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> to send message over.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="type">LmMessage</span></a> to send.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>location to store error, or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.26.6"></a><h4>Returns</h4>
+<p> Returns <span class="type">TRUE</span> if no errors where detected while sending, <span class="type">FALSE</span> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-send-with-reply"></a><h3>lm_connection_send_with_reply ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_send_with_reply (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                               <em class="parameter"><code><a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="type">LmMessage</span></a> *message</code></em>,
+                               <em class="parameter"><code><a class="link" href="loudmouth-LmMessageHandler.html#LmMessageHandler" title="LmMessageHandler"><span class="type">LmMessageHandler</span></a> *handler</code></em>,
+                               <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Send a <a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="type">LmMessage</span></a> which will result in a reply.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.27.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> used to send message.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="type">LmMessage</span></a> to send.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p><a class="link" href="loudmouth-LmMessageHandler.html#LmMessageHandler" title="LmMessageHandler"><span class="type">LmMessageHandler</span></a> that will be used when a reply to <em class="parameter"><code>message</code></em>
+arrives</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>location to store error, or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.27.6"></a><h4>Returns</h4>
+<p> Returns <span class="type">TRUE</span> if no errors where detected while sending, <span class="type">FALSE</span> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-send-with-reply-and-block"></a><h3>lm_connection_send_with_reply_and_block ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="returnvalue">LmMessage</span></a> *
+lm_connection_send_with_reply_and_block
+                               (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                                <em class="parameter"><code><a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="type">LmMessage</span></a> *message</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Send <em class="parameter"><code>message</code></em>
+ and wait for return.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.28.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>an <a class="link" href="loudmouth-LmMessage.html#LmMessage" title="LmMessage"><span class="type">LmMessage</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Set if error was detected during sending.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.28.6"></a><h4>Returns</h4>
+<p> The reply</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-unregister-reply-handler"></a><h3>lm_connection_unregister_reply_handler ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_unregister_reply_handler
+                               (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                                <em class="parameter"><code><a class="link" href="loudmouth-LmMessageHandler.html#LmMessageHandler" title="LmMessageHandler"><span class="type">LmMessageHandler</span></a> *handler</code></em>);</pre>
+<p>Unregisters the reply handler for <em class="parameter"><code>connection</code></em>
+. <em class="parameter"><code>handler</code></em>
+ will no longer be
+called if an incoming message has the id for which it was registered.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.29.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>Connection to unregister a handler for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p>The handler to unregister.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-register-message-handler"></a><h3>lm_connection_register_message_handler ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_register_message_handler
+                               (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                                <em class="parameter"><code><a class="link" href="loudmouth-LmMessageHandler.html#LmMessageHandler" title="LmMessageHandler"><span class="type">LmMessageHandler</span></a> *handler</code></em>,
+                                <em class="parameter"><code><a class="link" href="loudmouth-LmMessage.html#LmMessageType" title="enum LmMessageType"><span class="type">LmMessageType</span></a> type</code></em>,
+                                <em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmHandlerPriority" title="enum LmHandlerPriority"><span class="type">LmHandlerPriority</span></a> priority</code></em>);</pre>
+<p>Registers a <a class="link" href="loudmouth-LmMessageHandler.html#LmMessageHandler" title="LmMessageHandler"><span class="type">LmMessageHandler</span></a> to handle incoming messages of a certain type.
+To unregister the handler call <a class="link" href="loudmouth-LmConnection.html#lm-connection-unregister-message-handler" title="lm_connection_unregister_message_handler ()"><code class="function">lm_connection_unregister_message_handler()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>Connection to register a handler for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p>Message handler to register.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>Message type that <em class="parameter"><code>handler</code></em>
+will handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>The priority in which to call <em class="parameter"><code>handler</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-unregister-message-handler"></a><h3>lm_connection_unregister_message_handler ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_unregister_message_handler
+                               (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                                <em class="parameter"><code><a class="link" href="loudmouth-LmMessageHandler.html#LmMessageHandler" title="LmMessageHandler"><span class="type">LmMessageHandler</span></a> *handler</code></em>,
+                                <em class="parameter"><code><a class="link" href="loudmouth-LmMessage.html#LmMessageType" title="enum LmMessageType"><span class="type">LmMessageType</span></a> type</code></em>);</pre>
+<p>Unregisters a handler for <em class="parameter"><code>connection</code></em>
+. <em class="parameter"><code>handler</code></em>
+ will no longer be called
+when incoming messages of <em class="parameter"><code>type</code></em>
+ arrive.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.31.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>Connection to unregister a handler for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p>The handler to unregister.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>What type of messages to unregister this handler for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-set-disconnect-function"></a><h3>lm_connection_set_disconnect_function ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_set_disconnect_function (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                                       <em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmDisconnectFunction" title="LmDisconnectFunction ()"><span class="type">LmDisconnectFunction</span></a> function</code></em>,
+                                       <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>,
+                                       <em class="parameter"><code><span class="type">GDestroyNotify</span> notify</code></em>);</pre>
+<p>Set the callback that will be called when a connection is closed.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.32.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>Connection to register disconnect callback for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Function to be called when <em class="parameter"><code>connection</code></em>
+is closed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data passed to <em class="parameter"><code>function</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>notify</p></td>
+<td class="parameter_description"><p>Function that will be called with <em class="parameter"><code>user_data</code></em>
+when <em class="parameter"><code>user_data</code></em>
+needs to be freed. Pass <span class="type">NULL</span> if it shouldn't be freed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-send-raw"></a><h3>lm_connection_send_raw ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+lm_connection_send_raw (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>,
+                        <em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>,
+                        <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Asynchronous call to send a raw string. Useful for debugging and testing.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.33.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>Connection used to send</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>The string to send, the entire string will be sent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Set if error was detected during sending.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.33.6"></a><h4>Returns</h4>
+<p> Returns <span class="type">TRUE</span> if no errors was detected during sending,
+<span class="type">FALSE</span> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-get-state"></a><h3>lm_connection_get_state ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmConnection.html#LmConnectionState" title="enum LmConnectionState"><span class="returnvalue">LmConnectionState</span></a>
+lm_connection_get_state (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Returns the state of the connection.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.34.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>Connection to get state on</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.34.6"></a><h4>Returns</h4>
+<p> The state of the connection.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-ref"></a><h3>lm_connection_ref ()</h3>
+<pre class="programlisting"><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="returnvalue">LmConnection</span></a> *
+lm_connection_ref (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Add a reference on <em class="parameter"><code>connection</code></em>
+. To remove a reference call
+<a class="link" href="loudmouth-LmConnection.html#lm-connection-unref" title="lm_connection_unref ()"><code class="function">lm_connection_unref()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.35.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>Connection to add a reference to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.6.35.6"></a><h4>Returns</h4>
+<p> Returns the same connection.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lm-connection-unref"></a><h3>lm_connection_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lm_connection_unref (<em class="parameter"><code><a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a> *connection</code></em>);</pre>
+<p>Removes a reference on <em class="parameter"><code>connection</code></em>
+. If there are no references to
+<em class="parameter"><code>connection</code></em>
+ it will be freed and shouldn't be used again.</p>
+<div class="refsect3">
+<a name="id-1.2.2.6.36.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>Connection to remove reference from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="loudmouth-LmConnection.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="LM-CONNECTION-DEFAULT-PORT:CAPS"></a><h3>LM_CONNECTION_DEFAULT_PORT</h3>
+<pre class="programlisting">#define LM_CONNECTION_DEFAULT_PORT     5222
+</pre>
+<p>Default jabber client port.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LM-CONNECTION-DEFAULT-PORT-SSL:CAPS"></a><h3>LM_CONNECTION_DEFAULT_PORT_SSL</h3>
+<pre class="programlisting">#define LM_CONNECTION_DEFAULT_PORT_SSL 5223
+</pre>
+<p>Default jabber client port when using SSL encryption.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmConnection"></a><h3>LmConnection</h3>
+<pre class="programlisting">typedef struct _LmConnection LmConnection;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmHandlerResult"></a><h3>enum LmHandlerResult</h3>
+<p>The return type of an LmMessageHandler. This determines whether more message handlers should be called.</p>
+<div class="refsect3">
+<a name="id-1.2.2.7.5.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LM-HANDLER-RESULT-REMOVE-MESSAGE:CAPS"></a>LM_HANDLER_RESULT_REMOVE_MESSAGE</p></td>
+<td class="enum_member_description">
+<p>Stop calling message handlers. The message handler returning this declares the message has been handled and should be removed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-HANDLER-RESULT-ALLOW-MORE-HANDLERS:CAPS"></a>LM_HANDLER_RESULT_ALLOW_MORE_HANDLERS</p></td>
+<td class="enum_member_description">
+<p>Return to continue the calling handlers from the handler list. This declares that another handlers should handle the message.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmHandlerPriority"></a><h3>enum LmHandlerPriority</h3>
+<p>Since the handlers decide whether to stop the calling chain with there return values it's sometimes decirable to be able to set priority. For example a handler that only logs all incoming messages and then pass the message on to another handler wants to have priority <a class="link" href="loudmouth-LmConnection.html#LM-HANDLER-PRIORITY-FIRST:CAPS"><code class="literal">LM_HANDLER_PRIORITY_FIRST</code></a>. An handler that should take all messages that wasn't handled by anything else would want to have priority <a class="link" href="loudmouth-LmConnection.html#LM-HANDLER-PRIORITY-LAST:CAPS"><code class="literal">LM_HANDLER_PRIORITY_LAST</code></a>. If several handlers have the same priority nothing can be said about the order the handlers will be called in.</p>
+<div class="refsect3">
+<a name="id-1.2.2.7.6.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LM-HANDLER-PRIORITY-LAST:CAPS"></a>LM_HANDLER_PRIORITY_LAST</p></td>
+<td class="enum_member_description">
+<p>Call the handler after all handlers with <span class="type">NORMAL</span> and <span class="type">FIRST</span> priority.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-HANDLER-PRIORITY-NORMAL:CAPS"></a>LM_HANDLER_PRIORITY_NORMAL</p></td>
+<td class="enum_member_description">
+<p>Called before handlers with priority <span class="type">LAST</span> and after those with <span class="type">FIRST</span>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-HANDLER-PRIORITY-FIRST:CAPS"></a>LM_HANDLER_PRIORITY_FIRST</p></td>
+<td class="enum_member_description">
+<p>These are called before all other handlers.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmDisconnectReason"></a><h3>enum LmDisconnectReason</h3>
+<p>Sent with <a class="link" href="loudmouth-LmConnection.html#LmDisconnectFunction" title="LmDisconnectFunction ()"><span class="type">LmDisconnectFunction</span></a> to describe why a connection was closed.</p>
+<div class="refsect3">
+<a name="id-1.2.2.7.7.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LM-DISCONNECT-REASON-OK:CAPS"></a>LM_DISCONNECT_REASON_OK</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-DISCONNECT-REASON-PING-TIME-OUT:CAPS"></a>LM_DISCONNECT_REASON_PING_TIME_OUT</p></td>
+<td class="enum_member_description">
+<p>Connection to the server timed out.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-DISCONNECT-REASON-HUP:CAPS"></a>LM_DISCONNECT_REASON_HUP</p></td>
+<td class="enum_member_description">
+<p>The socket emitted that the connection was hung up.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-DISCONNECT-REASON-ERROR:CAPS"></a>LM_DISCONNECT_REASON_ERROR</p></td>
+<td class="enum_member_description">
+<p>A generic error somewhere in the transport layer.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-DISCONNECT-REASON-RESOURCE-CONFLICT:CAPS"></a>LM_DISCONNECT_REASON_RESOURCE_CONFLICT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-DISCONNECT-REASON-INVALID-XML:CAPS"></a>LM_DISCONNECT_REASON_INVALID_XML</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-DISCONNECT-REASON-UNKNOWN:CAPS"></a>LM_DISCONNECT_REASON_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>An unknown error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LmConnectionState"></a><h3>enum LmConnectionState</h3>
+<p>Describes the current state of an <a class="link" href="loudmouth-LmConnection.html#LmConnection" title="LmConnection"><span class="type">LmConnection</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.7.8.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LM-CONNECTION-STATE-CLOSED:CAPS"></a>LM_CONNECTION_STATE_CLOSED</p></td>
+<td class="enum_member_description">
+<p>The connection is closed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-CONNECTION-STATE-OPENING:CAPS"></a>LM_CONNECTION_STATE_OPENING</p></td>
+<td class="enum_member_description">
+<p>The connection is in the process of opening.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-CONNECTION-STATE-OPEN:CAPS"></a>LM_CONNECTION_STATE_OPEN</p></td>
+<td class="enum_member_description">
+<p>The connection is open.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-CONNECTION-STATE-AUTHENTICATING:CAPS"></a>LM_CONNECTION_STATE_AUTHENTICATING</p></td>
+<td class="enum_member_description">
+<p>The connection is in the process of authenticating.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LM-CONNECTION-STATE-AUTHENTICATED:CAPS"></a>LM_CONNECTION_STATE_AUTHENTICATED</p></td>
+<td class="enum_member_description">
+<p>The connection is authenticated and is ready to start sending/receiving messages.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

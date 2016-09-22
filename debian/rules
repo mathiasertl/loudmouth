@@ -1,0 +1,38 @@
+#!/usr/bin/make -f
+
+-include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
+
+TARBALL_EXT = tar.bz2
+GNOME_DOWNLOAD_URL = https://mcabber.com/files/loudmouth/$(GNOME_TARBALL)
+
+%:
+	dh $@ --with gnome
+
+autoreconf:
+	gtkdocize --copy
+	autoreconf --force --install
+
+override_dh_autoreconf:
+	dh_autoreconf --as-needed debian/rules -- autoreconf
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--enable-gtk-doc \
+		--with-asyncns=yes
+
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_makeshlibs:
+	dh_makeshlibs -V
+
+override_dh_clean:
+	dh_clean
+	rm -fr docs/reference/html
+	rm -fr docs/reference/xml
+	rm -f docs/reference/loudmouth-decl.txt
+	rm -f docs/reference/loudmouth-decl-list.txt
+	rm -f docs/reference/loudmouth-undocumented.txt
+
+override_dh_gnome:
+	dh_gnome --no-gnome-versions

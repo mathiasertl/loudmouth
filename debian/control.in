@@ -1,0 +1,43 @@
+Source: loudmouth
+Section: libs
+Priority: optional
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 10),
+               gnome-pkg-tools,
+               gtk-doc-tools (>= 1.1-2),
+               libglib2.0-dev,
+               libgnutls28-dev (>= 3.0.20),
+               libidn11-dev,
+               libasyncns-dev,
+               check
+Uploaders: @GNOME_TEAM@
+Standards-Version: 3.9.8
+Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/packages/unstable/loudmouth
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-gnome/packages/unstable/loudmouth/
+Homepage: https://mcabber.com/
+
+Package: libloudmouth1-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         libloudmouth1-0 (= ${binary:Version}),
+         libglib2.0-dev,
+         libgnutls28-dev,
+         libidn11-dev
+Description: Development files for Loudmouth Jabber library
+ The development headers and API documentation for the LoudMouth
+ Jabber library. See the description of libloudmouth1-0 for a more detailed
+ description.
+
+Package: libloudmouth1-0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Lightweight C Jabber library
+ Loudmouth is a lightweight and easy-to-use C library for programming
+ with the Jabber protocol. It's designed to be easy to get started
+ with and yet extensible to let you do anything the Jabber protocol
+ allows.
